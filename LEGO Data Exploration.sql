@@ -51,10 +51,10 @@ ORDER BY
   Total_Parts DESC
 
 -- Question 3:
--- How many sets were used per century ?
+-- How many sets were released per century ?
 SELECT 
   Century, 
-  COUNT(set_num) AS Number_Of_Sets_Created -- Counts the distinct amount of LEGO sets created
+  COUNT(set_num) AS Number_Of_Sets_Created -- Counts the number of LEGO sets created
 FROM 
   dbo.analytics_main 
 GROUP BY 
